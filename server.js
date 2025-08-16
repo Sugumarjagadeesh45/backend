@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = require('./app');
-const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/taxiapp';
+const mongoUri = process.env.MONGODB_URI ;
 
 // Remove deprecated options
 mongoose.connect(mongoUri)
